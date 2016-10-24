@@ -1,0 +1,16 @@
+.partners
+    background-color #fbfbfb
+    padding 70px 0 90px
+    
+    .left-col, .right-col
+      column(ratios = 6/12, gutter = .6)
+      img 
+        column(ratios = 2/6, gutter = .25)
+        opacity 0.2
+        transition .1s
+        &:hover
+          opacity 1
+        &:nth-of-type(3n)
+          margin 5px 0 0 0
+      
+    

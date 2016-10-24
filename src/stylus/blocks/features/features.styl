@@ -1,0 +1,35 @@
+.features
+  cf()
+  background-color #fbfbfb
+  padding 130px 0 170px
+  &__desc
+    color rgba(0,0,0,.5)
+    margin-bottom 120px
+    text-align center
+  .works
+    &__item
+      background red
+      column(ratios = 4/12, cycle = 1)
+      margin-bottom 25px
+      overflow hidden
+      position relative
+      transition .2s
+      &:hover 
+        box-shadow 2px 2px 35px rgba(20, 20, 21, 0.8)
+        transform scale(1.1)
+      &:before
+        content: "";
+        display: block;
+        padding-top: 100%;
+      &:nth-child(3n)
+        margin-right 0
+    &__image
+      min-height 100%
+      min-width 100%
+      margin auto
+      position absolute
+      top 0
+      left 0
+      right 0
+      bottom: 0;
+      

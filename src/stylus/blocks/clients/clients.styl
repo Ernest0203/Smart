@@ -1,0 +1,91 @@
+.clients
+  padding 140px 0
+  &__desc
+    color rgba(0,0,0,.5)
+    margin-bottom 90px
+    text-align center
+  
+  .carousel-wrapper
+    position relative
+    padding-left 10px
+  .prev, .next, .slick-next, .slick-prev
+    background-color white
+    box-shadow 0.5px 3px 14px rgba(20, 20, 21, 0.08)
+    border-radius 50%
+    border none
+    display block
+    height 48px
+    line-height 48px
+    width 48px
+    position absolute
+    top 40%
+    transition .2s
+    text-align center
+    z-index 1
+    &:hover
+      background-color orange-light
+      i 
+        color white
+  .prev, .next
+    display none;
+  .prev, .slick-prev
+    left -10px
+  .next, .slick-next
+    right -2px
+  .carousel
+    &__item
+      background-color white
+      border-radius 1px
+      border 1px solid #d3d3d3
+      box-shadow 0 0 0 rgba(20, 20, 21, 0.38)
+      margin-right 40px
+      padding 90px .7% 40px
+      text-align center
+      position relative
+      transition .1s
+      &:hover
+        border 1px solid transparent
+        box-shadow 0 0 27px rgba(20, 20, 21, 0.09)
+      &:before
+        background-color white
+        border 1px solid #d3d3d3
+        border-radius 50%
+        box-shadow 0 0 0 rgba(20, 20, 21, 0.38)
+        content ''
+        display block
+        margin-left -49px
+        height 98px
+        width 98px
+        position absolute
+        top -49px
+        left 50%
+    .quote
+      color rgba(0,0,0,0.7)
+      font-size 17px
+      font-family 'SourceSansPro-Regular'
+    .rating
+      margin 22px 0
+      i 
+        color #ffef3b
+    .author
+      color rgba(0,0,0,0.8)
+      font-weight 600
+      font-family 'SourceSansPro-Regular'
+      span 
+        font-weight 400
+        font-style italic
+        
+    .slick-list
+      padding 50px 0px 10px 30px
+    .slick-slide
+      width 536px
+    .slick-dots button
+      background-color #e0e0e0
+      border-radius 3px
+      margin-right 5px
+      height 6px
+      width 18px
+    .slick-dots .slick-active button
+      background-color #ff6e47
+
+  
